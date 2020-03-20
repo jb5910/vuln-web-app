@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+
+		<h1>Welcome! login here!</h1>
+		<h3>{note}</h3>
+		<form action="/login" method="GET">
+			<input name="username" placeholder="user name"><br>
+			<input type="password" name="pwd" placeholder="password"><br>
+			<input type="submit" value="Login">
+		</form>
+
+		<h1>Register Here!</h1>
+		<form action="/register" method="GET">
+			<p>Please enter a username (max 12 char): <input name="username" placeholder="user name"></p>
+			{error}
+			<p>Please enter a password (max 12 char): <input type="password" name="pwd" placeholder="password"></p>
+			<p>Please retype password: <input type="password" name="pwd2" placeholder="retype password"></p>
+			<input type="submit" value="Register">
+		</form>
+		
+		<h1>Say Hi Here!!</h1>
+		<h2> You had said: {hey} </h2>
+
+		<form action="/">
+			<input name="hello" placeholder="say something!">
+			<input type=submit value="say it!">
+		</form>
+
+	</body>
+</html>
