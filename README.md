@@ -12,12 +12,13 @@
 ```pip install flask --user``` <br>
 ```pip install pymysql --user```
 
-<p>In order for the app to run correctly, the SQL server needs to be set up to run on port 3306 with the user 'root' and no password </p>
-<p>The app runs on localhost on port 2520</p>
+<p>In order for the app to run correctly, the SQL server needs to be set up to run on port 3306 with the user 'root' and no password. </p>
+<p>app.py and the "templates" folder must be in the same directory. </p>
+<p>The app runs on localhost on port 2520.</p>
 <p>This app has a user log in, and then displays that user's credentials. If the login is invalid, the app responds with an error message.</p>
-<p>The app also allows the user to register, and asks for a user name and a password</p>
-<p>This app is vulnerable to both weak authentication (passwords are stored in plaintext and have no constraints as to what they can be)</p>
-<p>This app is also vulnerable to SQLi</p>
+<p>The app also allows the user to register, and asks for a user name and a password.</p>
+<p>This app is vulnerable to both weak authentication (passwords are stored in plaintext and have no constraints as to what they can be).</p>
+<p>This app is also vulnerable to SQLi.</p>
 
-<p>This app also allows the user to just input any string without logging in, and will then display that text back to the user</p>
-<p>This part of the app is vulnerable to Template Programming injection (see https://nvisium.com/blog/2015/12/07/injecting-flask.html for reference), which is a vulnerability that lies in the Flask dependency</p>
+<p>This app also allows the user to just input any string without logging in, and will then display that text back to the user.</p>
+<p>This part of the app is vulnerable to Template Programming injection (see https://nvisium.com/blog/2015/12/07/injecting-flask.html for reference), which is a vulnerability that lies in the Flask dependency.</p>
