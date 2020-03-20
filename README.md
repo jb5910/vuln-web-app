@@ -4,13 +4,11 @@
 
 <p> Here is my implementation of a vulnerable web application. It uses Flask and a SQL database. To create the database, please execeute the following SQL statements into a running instance of SQL (I used the instance from WAMP)</p>
 
-``` CREATE DATABASE vuln_app; ```
-``` CREATE TABLE vuln_app.users(username varchar(12), password varchar(12)); ```
+``` CREATE DATABASE vuln_app; \n CREATE TABLE vuln_app.users(username varchar(12), password varchar(12)); ```
 
 <p> In order for the app to run correctly, Flask and pymysql must be installed.</p>
 
-```pip install flask --user```
-```pip install pymysql --user```
+```pip install flask --user \n pip install pymysql --user```
 
 <p>In order for the app to run correctly, the SQL server needs to be set up to run on port 3306 with the user 'root' and no password </p>
 <p>The app runs on localhost on port 2520</p>
