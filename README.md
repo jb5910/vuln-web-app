@@ -3,6 +3,7 @@
 ## Welcome! ##
 
 <p> Here is my implementation of a vulnerable web application. It uses Flask and a SQL database. To create the database, please execeute the following SQL statements into a running instance of SQL (I used the instance from WAMP)</p>
+
 ``` CREATE DATABASE vuln_app; ```
 ``` CREATE TABLE vuln_app.users(username varchar(12), password varchar(12)); ```
 
