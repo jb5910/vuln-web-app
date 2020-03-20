@@ -20,4 +20,4 @@
 <p>This app is also vulnerable to SQLi</p>
 
 <p>This app also allows the user to just input any string without logging in, and will then display that text back to the user</p>
-<p>This part of the app is vulnerable to Template Programming injection (see https://nvisium.com/blog/2015/12/07/injecting-flask.html for reference)</p>
+<p>This part of the app is vulnerable to Template Programming injection (see https://nvisium.com/blog/2015/12/07/injecting-flask.html for reference), which is a vulnerability that lies in the Flask dependency</p>
